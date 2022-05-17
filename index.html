@@ -1,1 +1,22 @@
-<h1>hello</h1>
+<style>
+#content {
+  width: 700px; Height: 300px;
+  border: 1px solid black;
+}
+</style>
+
+<div id="ifrm">
+	<iframe id="content" src="https://codepen.io/posts/"></iframe>
+</div>
+<input type="button" id="btn1" value="Hide / Show"/>
+
+<script>
+  var content = document.getElementById('content');
+  var btn = document.getElementById('btn1');
+  var box = document.getElementById('ifrm');
+
+
+  btn.addEventListener('click', function (e) {
+    box.style.display = box.style.display === '' ? 'none' : '';
+  });
+</script>
